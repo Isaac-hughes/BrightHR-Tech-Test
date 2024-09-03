@@ -1,0 +1,58 @@
+.container {
+  padding: 20px;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+.documentList {
+  display: flex;
+  flex-direction: column;
+}
+
+.fileItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.fileDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.folderItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.folderHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.folderDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.fileItem img,
+.folderHeader img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.folderContents {
+  padding-left: 20px;
+  margin: 10px 0;
+}
