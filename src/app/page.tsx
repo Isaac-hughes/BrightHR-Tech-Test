@@ -77,6 +77,7 @@ export default function Page() {
             )
           }
           className={styles.inputField}
+          data-testid="sort-select"
         >
           <option value="name">Sort by Name</option>
           <option value="date">Sort by Date</option>
