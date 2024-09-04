@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Document Manager App
 
-## Getting Started
+This project is a simple **Document Manager** built with **Next.js** and **TypeScript**, allowing users to view and manage documents and folders. The app demonstrates filtering, sorting, and displaying hierarchical folder structures, along with unit tests using **Jest** and **React Testing Library**.
 
-First, run the development server:
+## Key Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 1. Document and Folder Display
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- The app displays a list of documents and folders. Documents can be of different types (PDF, DOC, CSV, etc.), and folders can contain nested documents or other folders.
+- The folder structure is dynamic, allowing for folders within folders.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 2. Sorting and Filtering
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Sorting**: Users can sort documents and folders by:
+  - **Name**
+  - **Date**
+  - **Size (Ascending or Descending)**
+- **Filtering**: Users can filter documents by name using the input box. The app supports filtering across all nested folders and files, making the search process seamless.
 
-## Learn More
+### 3. Recursive Folder Structure
 
-To learn more about Next.js, take a look at the following resources:
+- The `FolderItem` and `FileItem` components use a recursive approach to display nested folder contents. This allows for dynamically displaying folders within folders, making the app highly flexible for hierarchical data.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Interesting Code Highlights
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Dynamic Folder Structure**: The `FolderItem` component recursively renders folders, allowing for a tree-like structure.
 
-## Deploy on Vercel
+- **Flattening and Sorting**: The Page component uses helper functions to flatten nested folder structures and sort them based on user input.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Get started
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+After cloning the repo run npm install
+
+Use npm run dev to run locally
+Use npm run test to run unit tests
