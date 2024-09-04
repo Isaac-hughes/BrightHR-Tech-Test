@@ -10,9 +10,7 @@ export default function FileItem({ file }: FileItemProps) {
     <div className={styles.fileItem}>
       <img src={`/file-icons/${file.type}.png`} alt={file.type} />
       <div className={styles.fileDetails}>
-        <span>
-          <b>{file.name}</b>
-        </span>
+        <h4>{file.name}</h4>
         <span>{file.added}</span>
         <span>{(file.size / 1024).toFixed(2)} KB</span>
       </div>

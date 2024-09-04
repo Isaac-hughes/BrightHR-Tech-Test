@@ -15,9 +15,7 @@ export default function FolderItem({ folder }: FolderItemProps) {
       <div onClick={() => setIsOpen(!isOpen)} className={styles.folderHeader}>
         <img src="/folder-icon.png" alt="folder" />
         <div className={styles.folderDetails}>
-          <span>
-            <b>{folder.name}</b>
-          </span>
+          <h4>{folder.name}</h4>
           <span>{folder.added}</span>
           <span>{(folder.size / 1024).toFixed(2)} KB</span>
         </div>

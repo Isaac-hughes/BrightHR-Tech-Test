@@ -59,7 +59,7 @@ export default function Page() {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.heading}>Document Manager</h1>
+      <h1 className={styles.heading}>BrightHR Tech Test - Document Manager</h1>
 
       <div className={styles.controls}>
         <input

@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #1274df;
+  --secondary-color: #cdebff;
+  --accent-color: #e10078;
+  --background-color: rgba(255, 255, 255, 0.9);
+  --border-color: #ddd;
+}
